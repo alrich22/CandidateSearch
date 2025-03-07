@@ -13,22 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  background: linear-gradient(
-    180deg,
-    rgb(32, 44, 136) 0%,
-    rgba(9, 9, 121, 1) 15%,
-    rgba(0, 2, 18, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgb(32, 44, 136) 0%,
+      rgba(9, 9, 121, 1) 15%,
+      rgba(0, 2, 18, 1) 100%);
   background-size: cover;
   background-repeat: no-repeat no-repeat;
   background-position: center center;
@@ -36,43 +25,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 main {
@@ -84,6 +36,64 @@ main {
   align-items: center;
 }
 
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 0.6em 1.2em !important;
+  font-size: 30px !important;
+  font-weight: bolder;
+  font-family: inherit;
+  background-color: #fff;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+  border-width: 4px;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+  border-width: 4px;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
 tr {
   border-radius: 10px;
   background-color: #000;
@@ -91,7 +101,7 @@ tr {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #333333;
+  background-color: #333333 !important;
 }
 
 .nav {
@@ -106,15 +116,38 @@ tbody tr:nth-child(odd) {
 }
 
 .nav-link {
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
 .active {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
+
+.card-img-top {
+  max-width: 50vh;
+  max-height: 50vh;
+  min-height: 50vh;
+  min-width: 50vh;
+  ;
+  object-fit: cover;
+}
+
+.card-body {
+  max-width: 50vh;
+}
+
+
 
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+
+td {
+  word-break: break-word;
+}
+
+.reject-btn {
+  font-size: 22px !important;
 }
