@@ -1,7 +1,9 @@
+import { useLocation, Link } from 'react-router-dom';
+
 const Nav = () => {
-    const currentPage: string = useLocation().pathname;
-    return (
-      <nav className="nav justify-content-center">
+  const currentPage: string = useLocation().pathname;
+  return (
+    <nav className="nav justify-content-center">
       <div className="nav-item">
         <Link to="/"
         className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
@@ -15,8 +17,7 @@ const Nav = () => {
         </Link>
       </div>
     </nav>
-    )
-  };
-  
-  export default Nav;
-  
+  )
+};
+
+export default Nav;
