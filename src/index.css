@@ -151,3 +151,11 @@ td {
 .reject-btn {
   font-size: 22px !important;
 }
+
+td {
+  word-break: break-word;
+}
+
+.reject-btn {
+  font-size: 22px !important;
+}

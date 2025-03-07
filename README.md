@@ -12,7 +12,7 @@ Simply install from the GitHub Repository and open in VSCode
 
 To use this application, once installed, navitage into the "environment" folder, and enter your github personal API key access token where it says to. Now, open the root folder in your local terminal and run the command "npm run dev". This will start a local vite server on your system with the API working, and use the "+" to add the candidate to your list for further research, or the "-" to skip adding them to your list. 
 
-Alternatively, visit the deployed app on the internet:
+Alternatively, visit the deployed app on the internet: https://candidatesearch-alrich22.onrender.com
 
 
 ## How to Contribute
